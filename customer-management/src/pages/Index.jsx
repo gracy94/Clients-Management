@@ -1,7 +1,7 @@
 
 function Index() {
   return (
-    <div>Home</div>
+    <div>HomePage</div>
   )
 }
 
