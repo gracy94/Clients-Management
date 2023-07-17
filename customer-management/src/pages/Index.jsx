@@ -1,40 +1,11 @@
+/* eslint-disable react-refresh/only-export-components */
 import { useLoaderData } from 'react-router-dom'
+import {getClients} from '../data/clients'
 import Client from '../components/Client';
 
 export function loader(){
 
-  const clients = [
-    {
-      id: 1,
-      name: 'Gracy',
-      phone: 123456,
-      email: "gracy@gracy.com"
-    },
-    {
-      id: 2,
-      name: 'Jose',
-      phone: 654321,
-      email: "jose@jose.com"
-    },
-    {
-      id: 3,
-      name: 'Mary',
-      phone: 789456,
-      email: "mary@mary.com"
-    },
-    {
-      id: 4,
-      name: 'David',
-      phone: 987654,
-      email: "david@david.com"
-    },
-    {
-      id: 5,
-      name: 'Gaby',
-      phone: 951753,
-      email: "gaby@gaby.com"
-    }
-  ]
+  const clients = getClients()
 
   return clients;
 }
