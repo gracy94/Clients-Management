@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-escape */
 /* eslint-disable react-refresh/only-export-components */
 import { useNavigate, Form, useActionData } from "react-router-dom"
 import Formu from "../components/Formu"
