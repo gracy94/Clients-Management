@@ -1,5 +1,5 @@
 {
-"clients" : [
+  "clients": [
     {
       "id": 1,
       "name": "Gracy",
@@ -29,6 +29,13 @@
       "name": "Gaby",
       "phone": 951753,
       "email": "gaby@gaby.com"
+    },
+    {
+      "name": "Andy",
+      "email": "andy@andy.com",
+      "phone": "159753",
+      "notes": "asdfgh",
+      "id": 6
     }
   ]
 }

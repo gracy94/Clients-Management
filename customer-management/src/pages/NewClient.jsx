@@ -1,8 +1,9 @@
 /* eslint-disable no-useless-escape */
 /* eslint-disable react-refresh/only-export-components */
-import { useNavigate, Form, useActionData } from "react-router-dom"
+import { useNavigate, Form, useActionData, redirect } from "react-router-dom"
 import Formu from "../components/Formu"
 import Error from "../components/Error"
+import { addClient } from '../data/clients'
 
 export async function action({request}) {
    const formData = await request.formData()
@@ -24,7 +25,10 @@ export async function action({request}) {
    if(Object.keys(errors).length) {
     return errors
    } 
-   return null
+
+   await addClient(data)
+
+   return redirect('/')
 }
 
 function NewClient() {
