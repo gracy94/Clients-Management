@@ -1,4 +1,5 @@
-const Formu = () => {
+const Formu = ({client}) => {
+
     return (
         <>
             <div className="mb-4">
@@ -12,6 +13,7 @@ const Formu = () => {
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Client's name"
                     name="name"
+                    defaultValue= {client?.name}
                 />
             </div>
           
@@ -26,6 +28,7 @@ const Formu = () => {
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Client's email"
                     name="email"
+                    defaultValue= {client?.email}
                 />
             </div>
 
@@ -40,6 +43,7 @@ const Formu = () => {
                     className="mt-2 block w-full p-3 bg-gray-50"
                     placeholder="Client's phone"
                     name="phone"
+                    defaultValue= {client?.phone}
                 />
             </div>
 
@@ -54,6 +58,7 @@ const Formu = () => {
                     className="mt-2 block w-full p-3 bg-gray-50 h-40 align-self"
                     placeholder="Client's notes"
                     name="notes"
+                    defaultValue= {client?.notes}
                 />
             </div>
         </>

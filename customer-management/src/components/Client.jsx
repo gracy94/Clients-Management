@@ -1,7 +1,9 @@
 /* eslint-disable react/prop-types */
+import { useNavigate } from 'react-router-dom'
 
 function Client({client}) {
   
+    const navigate = useNavigate()
     const {name, phone, email, id} = client
   
     return (
@@ -17,6 +19,7 @@ function Client({client}) {
                 <button
                     type="button"
                     className="text-purple-600 hover:text-purple-800 uppercase font-bold text-xs"
+                    onClick={()=> navigate(`/clients/${id}/edit`)}
                     >
                     Edit
                 </button>
