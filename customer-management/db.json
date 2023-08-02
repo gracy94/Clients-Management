@@ -1,16 +1,18 @@
 {
   "clients": [
     {
-      "id": 1,
-      "name": "Gracy",
-      "phone": 123456,
-      "email": "gracy@gracy.com"
+      "name": "Gracy actualizado",
+      "email": "gracy@gracy.com",
+      "phone": "123456",
+      "notes": "nueva nota",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Jose",
-      "phone": 654321,
-      "email": "jose@jose.com"
+      "name": "Jose Diaz",
+      "email": "jose@jose.com",
+      "phone": "654321",
+      "notes": "Nueva Nota",
+      "id": 2
     },
     {
       "id": 3,
