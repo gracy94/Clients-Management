@@ -1,7 +1,7 @@
 {
   "clients": [
     {
-      "name": "Gracy actualizado",
+      "name": "Gracy (actualizado)",
       "email": "gracy@gracy.com",
       "phone": "123456",
       "notes": "nueva nota",
@@ -31,13 +31,6 @@
       "name": "Gaby",
       "phone": 951753,
       "email": "gaby@gaby.com"
-    },
-    {
-      "name": "Andy",
-      "email": "andy@andy.com",
-      "phone": "159753",
-      "notes": "asdfgh",
-      "id": 6
     }
   ]
 }

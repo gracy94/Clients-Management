@@ -1,5 +1,11 @@
 /* eslint-disable react/prop-types */
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Form, redirect } from 'react-router-dom'
+import { deleteClient } from '../data/clients'
+
+export async function action({params}){
+    await deleteClient(params.clientId)
+    return redirect('/')
+}
 
 function Client({client}) {
   
@@ -24,12 +30,22 @@ function Client({client}) {
                     Edit
                 </button>
 
-                <button
-                    type="button"
-                    className="text-red-600 hover:text-red-800 uppercase font-bold text-xs"
-                    >
-                    Delete
-                </button>
+                <Form
+                    method='post'
+                    action={`/clients/${id}/delete`}
+                    onSubmit={(e)=> {
+                        if(!confirm('Do you want to delete this record?')){
+                            e.preventDefault()
+                        }
+                    }}
+                >
+                    <button
+                        type="submit"
+                        className="text-red-600 hover:text-red-800 uppercase font-bold text-xs"
+                        >
+                        Delete
+                    </button>
+                </Form>
             </td>
         </tr>
     )
